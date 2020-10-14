@@ -1,0 +1,273 @@
+body {
+ width: 1440px;
+ background-color: #ffffff;
+ margin: 0 auto;
+}
+
+main {
+    font-family: "Spectral SC", serif, "Arial", serif;
+    font-size: 16px;
+    color: #2e2f22;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding-top: 83px;
+}
+
+p, a {
+    font-family: "Open Sans", sans-serif, "Arial", sans-serif;
+    color: #2e2f22;
+}
+
+.header-top {
+    width: 1440px;
+    min-height: 581px;
+    background: url("img/banner-hand.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    margin: 0 auto;
+    
+    font-family: "Open Sans", sans-serif, "Arial", sans-serif;
+}
+
+.menu {
+   display: flex;
+   margin: 0 auto; 
+   margin-top: 30px;
+}
+
+.a-top {  
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.logo {
+    margin-right: 400px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.mtvn {
+    width: 998px;
+    height: 1465px;    
+    margin: 0 323px 0 119px;
+    
+}
+
+img.mtvn-img {
+    border-radius: 0;
+}
+
+.all-arts a {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+}
+
+.teg-mtvn {
+    width: 317px;
+    height: 26px;    
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+   
+}
+
+.mtvn-2 {
+    width: 991px;
+    height: 208px;
+    
+}
+
+.mtvn-icon {
+    margin-top: 40px;    
+}
+
+.like-1 {
+    background-color: white;
+    border: none;
+    
+}
+
+.like-3 {
+    font-size: 24px;
+    margin-left: 14px;
+}
+
+.added {
+    
+}
+
+.tw {
+    float: right;
+    transform: scale(1);
+    margin-left: 50px;
+    
+}
+.fc {
+    float: right;
+    transform: scale(1);
+    margin-left: 50px;
+    
+}
+
+.vk {
+    float: right;
+    transform: scale(1);
+    margin-left: 50px;
+    
+}
+
+.comment {
+    width: 593px;
+    
+    font-family: "Open Sans", sans-serif;
+    padding: 50px 100px;
+    border-radius: 10px;
+}
+
+.comment-1 {
+    width: 593px;    
+    background-color: #ece1e1;
+    padding: 50px 100px;
+    border-radius: 10px;
+}
+
+img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+li {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+li p {
+    font-weight: 400;
+}
+
+.comment-2 {
+    width: 593px;
+    padding: 30px 100px;
+}
+.comment-2 h3 {
+    font-size: 24px;
+}
+
+.comment a {    
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.form {
+    width: 693px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 100px;
+    
+}
+
+textarea {
+    width: 406px;
+    height: 208px;
+    font-size: 16px;
+    padding: 20px;
+    color: #2e2f22;
+    border-radius: 10px;
+}
+
+.red {
+    color: red;
+}
+
+input[type="text"], input[type="email"] {
+    width: 224px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid #2e2f22;
+    color: #2e2f22; 
+    padding-bottom: 10px;   
+}
+
+input[type="text"]:hover, input[type="email"]:hover, 
+input[type="submit"]:hover, label:hover {
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    width: 224px;
+    height: 46px;
+    margin-top: 90px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+
+.footer {
+    width: 1440px;
+    height: 181px;
+    background-color: #d7d1c9;
+    color: #2e2f22;
+    display: flex;   
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+.a-footer {
+    text-decoration: none;
+    position: relative;
+    top: 40%;
+    margin-left: 100px;
+}
+
+.a-ftr-1 {
+    text-decoration: none;
+    position: relative;
+    top: 40%;
+    margin-left: 500px;
+}
+
+.a-ftr-2 {
+    margin-right: 500px;
+}
+
+.up-button {
+    position: fixed;
+    z-index: 1;
+    padding: 0;
+    bottom: 75px;
+    right: 20px;
+    width: 64px;
+    height: 64px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    border: 5px solid;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .up-button {
+    color: #6653d9;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: #6653d9;
+    outline-color: #b6aaff;
+  }
+  
+  .up-button:hover {
+    color: #473c8d;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: #473c8d;
+  }
+
+  .shown {
+    display: inline-block;
+  }
