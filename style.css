@@ -11,28 +11,15 @@ main {
     background-color:  #ffffff;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
     padding-top: 83px;
 }
 
 p, a, button {
     font-family: "Open Sans", sans-serif, "Arial", sans-serif;
     color: #2e2f22;
-    text-decoration: none;
 }
 
-a.a-art p {
-    font-family: "Open Sans", sans-serif, "Arial", sans-serif;
-    font-size: 16px;
-    color: #2e2f22;
-    text-decoration: none;
-}
-
-a.a-art h3 {
-    font-family: "Spectral SC", serif, "Arial", serif;
-    font-size: 18px;
-    color: #2e2f22;
-    text-decoration: none;
-}
 
 .header-top {
     width: 100%;
@@ -48,17 +35,19 @@ a.a-art h3 {
 
 .menu {
    display: flex;
-   margin: 0 auto; 
+   /*justify-content: space-between;*/
+   /*flex-wrap: wrap;*/
+   margin: auto; 
    margin-top: 30px;
 }
 
-.a-top {  
+div .a-top {  
     margin-right: 60px;
     text-decoration: none;
 }
 
 .logo {
-    margin-right: 400px;
+    margin-right: 25%;
     margin-top: 30px;
     margin-left: 100px;
 }
@@ -94,6 +83,26 @@ a.a-art h3 {
 .hidden {
     display: none;
 }
+
+/*.btn-arts-1 .filter::before {  
+    content: "Выбрать тему"; 
+    color: #000000;
+    position: relative; 
+    left: -20px;
+  }
+
+  .btn-arts-1 .filter::after {  
+  content: "";   
+  border-top: 15px solid #ffffff;
+  border-left: 10px solid #ffffff;
+  border-right: 10px solid #ffffff;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  
+  position: relative;
+  top: 17px;
+  right: -22px;
+}*/
 
 .arts-1 {
     width: 90%;
@@ -134,7 +143,7 @@ img {
     
 }
 
-.a-art .img-big-1 {
+.img-big-1 {
     width: 590px;
     height: 552px;
     background: url("img/roses.png") no-repeat;
@@ -154,19 +163,18 @@ img {
     margin-bottom: 50px;    
 }
 
-.a-art .img-big-txt {
+.img-big-txt {
     position: relative;
     top: 350px;
     left: 82px;
-    color: white;
 }
 
-.a-art .img-big-txt h3 {
+.img-big-txt h3 {
     font-size: 20px;
     color: white;
 }
 
-.a-art .img-big-txt p {
+.img-big-txt p {
     font-size: 18px;
     color: white;
 }
@@ -177,19 +185,18 @@ img {
     
 }
 
-.a-art .teg-big {
+.teg-big {
     position: relative;
     top: 330px;
     left: -5px;
     display: flex;
     justify-content: space-around;
-    font-size: 16px;
-    color: white;
+    font-size: 18px;
+    
 }
 
-.a-art .teg-big p {
+.teg-big p {
     color: white;
-    font-size: 16px;
 }
 
 .btn-arts-2 {    
@@ -301,14 +308,17 @@ button.btn-portfl-1 {
 }
 
 .contact {
-    width: 996px;
-    /*height: 741px;*/
+    width: 60%;
     margin: 0 auto;
-    
+      
 }
 
-.form {
-    width: 996px;
+.contact h2 {
+    text-align: center;
+}
+
+div.form {
+    width: 100%;
     height: 637px;
     background: url("img/email.png") no-repeat;
     background-size: cover;
@@ -320,17 +330,26 @@ button.btn-portfl-1 {
     padding: 0 41px;     
 }
 
+.in-form {
+    width: 90%;
+    height: 63px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 53px;
+}
+
 label {
-    text-transform: uppercase;
+    text-transform: none;
     font-weight: bold;    
 }
 
 input[type="text"], input[type="email"] {
-    width: 407px;
+    width: 90%;
     height: 63px;
     border: 1px solid #c4c4c4;
     border-radius: 10px;
-    margin-bottom: 20px;
+    
     font-size: 16px; 
     font-family: "Open Sans", sans serif;
     color: #c4c4c4; 
@@ -344,23 +363,22 @@ input[type="text"]:hover, input[type="email"]:hover {
     filter: opacity(1);
 }
 
-.text {
-    margin-left: 60px;
-}
-
-.email {
-    margin-right: 60px;
-}
-
 .text, .email {
-    margin-top: 20px;   
+    width: 90%;
+    
+}
+
+div.msg {
+    width: 100%;
+    margin: 60px 0 0 5%;
 }
 
 textarea {
     border: 1px solid #c4c4c4;
     border-radius: 10px;
-    width: 837px;
+    width: 88%;
     height: 293px;
+    
     font-size: 16px;
     padding: 20px;
     font-family: "Open Sans", sans serif;
@@ -426,7 +444,7 @@ input[type="submit"] {
     z-index: 1;
     padding: 0;
     bottom: 75px;
-    right: 20px;
+    right: 40px;
     width: 64px;
     height: 64px;
     font-size: 36px;
