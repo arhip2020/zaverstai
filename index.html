@@ -8,29 +8,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Spectral+SC&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+
 <!---->
-        <div class="header-top">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo" width="130" height="83">
-            </div>
-            <div class="menu">
-                <div><a class="a-top" href="#arts">Статьи</a></div>
-                <div><a class="a-top" href="#me">Обо мне</a></div>
-                <div><a class="a-top" href="#portfolio">Портфолио</a></div>
-                <div><a class="a-top" href="#contact">Написать мне</a></div>   
-            </div>
-        </div>        
+    <header class="page-header">
+
+        <div class="box-center">
+            
+            <a class="logo">
+                <img src="img/logo.png" alt="logo" width="130" height="83" alt="Логотип">
+            </a>
+
+            <nav class="header-nav">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a class="a-top" href="#arts">Статьи</a></li>
+                    <li class="nav-li"><a class="a-top" href="#me">Обо мне</a></li>
+                    <li class="nav-li"><a class="a-top" href="#portfolio">Портфолио</a></li>
+                    <li class="nav-li"><a class="a-top" href="#contact">Написать мне</a></li>
+                </ul>  
+            </nav>
+
+        </div>
+
+        <img src="img/banner.jpg" class="banner" width="1440" height="581" alt="Девушка на фоне города и моря">
+
     </header>
 
 
     <main>
-<!---->
+
         <div class="arts" id="arts">
+
             <div class="arts-1">
+
                 <h2 class="art all-art">Все статьи</h2>
-                <div class="btn-arts-1">
-                    <!--<button type="button"></button>-->
+
+                <div class="btn-arts-1">    
                     <select class="filter">
                         <option value="all">Выбрать тему</option>
                         <option value="berlin">Путешествия</option>
@@ -41,13 +53,15 @@
                         <option value="all">Все статьи</option>
                     </select>
                 </div>
+
             </div>
             
-            <div class="arts-2">            
+            <div class="arts-2">
+
                 <a class="a-art" href="index2.html">
                     <div class="img-small theme" data-category="berlin">
                         <div>
-                            <img src="img/Berlin.png" width="387" height="268" alt="Berlin">
+                            <img  class="img-small-1" src="img/Berlin.png" width="387" height="268" alt="Berlin">
                         </div>
                         
                         <h3>Путешествие в Берлин в августе</h3>                    
@@ -57,14 +71,14 @@
                             <div class="teg">
                                 <p>Теги: путешествия</p>
                                 <p>29.09.2020</p>
-                            </div>               
-                    </div> 
+                            </div>
+                    </div>
                 </a>
-    
+                 
                 <a class="a-art" href="index2.html">
                     <div class="img-small theme" data-category="city">
                         <div>
-                            <img src="img/coldbrew.png" width="387" height="268" alt="coldbrew">
+                            <img class="img-small-1" src="img/coldbrew.png" width="387" height="268" alt="coldbrew">
                         </div>
                         
                          <h3>Где выпить колдбрю в Москве</h3>                    
@@ -77,11 +91,11 @@
                             </div>               
                     </div> 
                 </a>
-    
+
                 <a class="a-art" href="index2.html">
                     <div class="img-small theme" data-category="books">
                         <div>
-                            <img src="img/glasses.png" width="387" height="268" alt="glasses">
+                            <img class="img-small-1" src="img/glasses.png" width="387" height="268" alt="glasses">
                         </div>
                         
                          <h3>Прочитано: книжные рекомендации</h3>                    
@@ -95,9 +109,11 @@
                             </div>               
                     </div>
                 </a>
+                
             </div>
     
             <div class="arts-3">
+
                 <a class="a-art" href="index2.html">
                     <div class="img-big-1 theme" data-category="photo">
                         <div class="img-big-txt">
@@ -110,10 +126,12 @@
                         <div class="teg-big">
                             <p>Теги: фотографии</p>
                         <p>29.06.2020</p>   
-                        </div>               
-                    </div> 
+                        </div>
+                    </div>
                 </a>
-    
+                               
+             
+                
                 <a class="a-art" href="index2.html">
                     <div class="img-big-2 theme" data-category="recipe">
                         <div class="img-big-txt">
@@ -126,20 +144,27 @@
                         <div class="teg-big">
                             <p>Теги: рецепты</p>
                             <p>24.06.2020</p>
-                        </div>                   
-                    </div> 
-                </a>   
+                        </div>
+                    </div>     
+                </a>
+                              
+                    
             </div>
 
-            <div class="btn-arts-2">
+            <!--<div class="btn-arts-2">
                 <button type="button">Показать ещё</button>
-            </div>
+            </div>-->
+
+            <a href="article.html" class="btn-arts-2">Показать ещё</a>
+
         </div>
         
 
-<!---->
+
         <div class="me" id="me">
+
             <h2 class="art">Обо мне</h2>
+
             <div class="me-img">
                 <div class="me-img-1">
                     <img src="img/me.png" width="590" height="693" alt="me">
@@ -149,14 +174,14 @@
                     <p>Всем привет! Меня зовут Аня, и это мой личный блог.<br>
                         Здесь ты найдёшь рассказы о моих путешествиях, снимки<br>
                         на плёнку, рецепты, обзоры на книги. В общем, тексты о том,<br>
-                        что мне инетресно.</p><br>
+                        что мне инетресно.</p>
                     <p>Я работаю копирайтером, поэтому мой блоге — это ещё и моё<br>
                         портфолио. Ниже размещены несколько моих лучших<br>
-                        рабочих текстов. Буду рада новым сотрудничествам!</p><br>
+                        рабочих текстов. Буду рада новым сотрудничествам!</p>
                     <p>Если вы хотите написать мне — это можно сделать в соцсетях<br>
                         или через форму. Всегда приятно услышать обратную связь<br>
-                        от читателей и познакомиться поближе.</p><br>
-                    <p>Приятного чтения!</p><br><br>
+                        от читателей и познакомиться поближе.</p>
+                    <p>Приятного чтения!</p>
                 
                     <p  class="italic">Я верю, что каждый раз пробуя новое,
                         выходящее за зону моего комфорта,
@@ -167,69 +192,86 @@
             
         </div>
 
-<!---->        
+        
         <div class="portfolio" id="portfolio">
-            <h2 class="art">Портфолио</h2>
-            <div class="portfolio-0">
 
-                <div class="portfolio-1">
-                    <div>
-                        <img  class="port-1" src="img/html-academy.png" width="387" height="525" alt="html-academy">
+            <h2 class="art">Портфолио</h2>
+
+            <div class="portfolio-0">
+                
+                <a href="#" class="port-link">
+                    <div class="portfolio-1">
+                        <div>
+                            <img  class="port-1" src="img/html-academy.png" width="387" height="525" alt="html-academy">
+                        </div>
+                        
+                        <div class="port-txt">
+                            <h3>Блог HTML Academy</h3>
+                                <h4>«Как учиться продуктивно»</h4>
+                                <p>Про основные методы обучения,<br>
+                                которые помогут быстро и надолго<br>
+                                запомнить информацию.</p>
+                        </div>                   
                     </div>
-                    
-                    <div class="port-txt">
-                        <h3>Блог HTML Academy</h3>
-                            <h4>«Как учиться продуктивно»</h4>
-                            <p>Про основные методы обучения,<br>
-                            которые помогут быстро и надолго<br>
-                            запомнить информацию.</p>
-                    </div>                   
-                </div>
-    
-                <div class="portfolio-1">
-                    <div>
-                        <img  class="port-1" src="img/kiss.png" width="387" height="525" alt="kiss">
+                </a>
+                
+                
+                <a href="#" class="port-link">
+                    <div class="portfolio-1">
+                        <div>
+                            <img  class="port-1" src="img/kiss.png" width="387" height="525" alt="kiss">
+                        </div>
+                        
+                        <div class="port-txt txt-w">
+                            <h3>Журнал «LNK»</h3>
+                            <h4>«Зачем поцелуи нужны человеку?<br>
+                                И какие они бывают»</h4>
+                            <p>Поцелуи — повсеместная ежедневная<br>
+                                практика. Но зачем люди целуются?<br>
+                                Какие мысли вкладывают в этот ритуал?<br>
+                                И где корни этой практики?</p>
+                        </div>
                     </div>
-                    
-                    <div class="port-txt txt-w">
-                        <h3>Журнал «LNK»</h3>
-                        <h4>«Зачем поцелуи нужны человеку?<br>
-                            И какие они бывают»</h4>
-                        <p>Поцелуи — повсеместная ежедневная<br>
-                            практика. Но зачем люди целуются?<br>
-                            Какие мысли вкладывают в этот ритуал?<br>
-                            И где корни этой практики?</p>
+                </a>    
+                
+                
+                <a href="#" class="port-link">
+                    <div class="portfolio-1">
+                        <div>
+                            <img  class="port-1" src="img/T-L.png" width="387" height="525" alt="T-L">
+                        </div>
+                        
+                        <div class="port-txt">
+                            <h3>Журнал «Т — Л»</h3>
+                            <h4>«Советы по эффективной<br>
+                                удалённой работе»</h4>
+                            <p>Поделилась лайфхаками, которые помогают<br>
+                                мне работать продуктивно из дома. </p>
+                        </div>
                     </div>
-                </div>
-    
-                <div class="portfolio-1">
-                    <div>
-                        <img  class="port-1" src="img/T-L.png" width="387" height="525" alt="T-L">
-                    </div>
-                    
-                    <div class="port-txt">
-                        <h3>Журнал «Т — Л»</h3>
-                        <h4>«Советы по эффективной<br>
-                            удалённой работе»</h4>
-                        <p>Поделилась лайфхаками, которые помогают<br>
-                            мне работать продуктивно из дома. </p>
-                    </div>
-                </div>
+                </a>    
+                
     
             </div>
             
-            <div class="btn-portfl">
-                <button class="btn-portfl-1" type="button">Показать еще</button>
-            </div>
+            <a href="article.html" class="btn-portfl">
+                <div class="btn-portfl">
+                    <button class="btn-portfl-1" type="button">Показать еще</button>
+                </div>
+            </a>
+            
             
         </div>
 
-<!---->
+
         <div class="contact" id="contact">
+
             <h2 class="art">Написать мне</h2>
             
-                <form action="google@gmail.com" method="post">
-                    <div class="form">
+                <div class="form">
+                    <form action="google@gmail.com" method="post">
+                    
+                        <div class="in-form">
                             <div class="text">
                                 <label for="name">Ваше имя</label><br>
                                 <input type="text" id="name" placeholder="Иван Иванов" required>
@@ -239,8 +281,10 @@
                                 <label for="email">Email</label><br>
                                 <input type="email" id="email" placeholder="google@gmail.com" required><br>
                             </div>
+                        </div>
                             
-                            <div>
+                            
+                            <div class="msg">
                                 <label for="msg">Сообщение</label><br>
                                 <textarea class="msg" id="msg" placeholder="Напишите здесь ваше сообщение."></textarea>
                             </div>
@@ -248,20 +292,20 @@
                             <div>
                                 <input class="btn-submit" type="submit">
                             </div>
-                    </div>
-                </form>
-            
-            
+                    
+                    </form>
+                </div>              
         </div>
+
     </main>
 
-<!---->
+
     <footer>
         <div class="footer">
-            <a class="a-ftr-1" href="#">ВК</a>
-            <a class="a-footer" href="#">Телеграм</a>
-            <a class="a-footer" href="#">Инстаграм</a>
-            <a class="a-footer a-ftr-2" href="#">Твиттер</a>
+            <a class="a-footer a-ftr-1" href="https://vk.com/htmlacademy">ВК</a>
+            <a class="a-footer" href="tg://resolve?domain=htmlacademy">Телеграм</a>
+            <a class="a-footer" href="https://www.instagram.com/htmlacademy/">Инстаграм</a>
+            <a class="a-footer a-ftr-2" href="https://twitter.com/htmlacademy_ru">Твиттер</a>
         </div>
         
     </footer>
